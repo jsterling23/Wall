@@ -1,0 +1,81 @@
+.wrapper {
+     width: 800px;
+     height: 750px;
+     margin: auto;
+     /*border: 1px solid yellow;*/
+     position: relative;
+     /*text-align: center;*/
+}
+
+body {
+     background: linear-gradient(#000000, #3a3a3a 100%);
+
+}
+
+
+header {
+     margin: 75px 140px 0px 50px;
+     display: inline-block;
+     /*border: 1px solid yellow;*/
+     /*font-size: 2.5em;*/
+}
+
+     header > h2 {
+          color: #00adef;
+          font-size: 2.5em;
+          /*display: inline-block;*/
+     }
+
+     header > h1 {
+          color: #00adef;
+          font-size: 4.5em;
+     }
+
+a {
+     margin: 0px 0px 0px 20px;
+}
+
+#submit, button {
+     background: linear-gradient(#0086f3, #075b8b 100%);
+     color: white;
+     border: .5px solid white;
+     height: 30px;
+     width: 75px;
+}
+
+aside {
+     display: inline-block;
+     /*border: 1px solid yellow;*/
+     position: absolute;
+     top: 65px;
+}
+
+     aside > h2 {
+          color: #00adef;
+          font-size: 1.5em;
+     }
+
+hr {
+     border: 2px solid #00adef;
+     margin: 150px 0px 0px 0px;
+}
+
+label, p, ul > li {
+     color: #00adef;
+}
+
+form {
+     width: 250px;
+     /*display: inline-block;*/
+
+}
+     form > label {
+          display: block;
+     }
+
+     form > input {
+         margin:20px 0px 20px 0px;
+     }
+
+.messages > ul {
+     color: red;

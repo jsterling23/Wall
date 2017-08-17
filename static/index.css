@@ -1,0 +1,50 @@
+.wrapper {
+     width: 800px;
+     height: 700px;
+     margin: auto;
+     text-align: center;
+}
+
+body {
+     background: linear-gradient(#000000, #3a3a3a 100%);
+}
+
+header {
+     margin:200px 0px 40px 0px;
+}
+
+     header > h1 {
+          color: #00adef;
+          font-size: 3.5em;
+     }
+
+     header > ul > a, p {
+          font-size: 1.2em;
+     }
+
+hr {
+     width: 800px;
+     margin: 100px 0px 0px 0px;
+}
+
+main {
+     margin: 170px 0px 0px 0px;
+     text-align: center;
+     text-decoration: underline;
+}
+
+a {
+     margin: 0px 25px 0px 25px;
+}
+
+button {
+     background: linear-gradient(#0086f3, #075b8b 100%);
+     color: white;
+     border: .5px solid white;
+     height: 30px;
+     width: 75px;
+}
+
+ul {
+     color: white;
+}

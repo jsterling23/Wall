@@ -1,0 +1,47 @@
+.wrapper {
+     width: 900px;
+     height: 900px;
+     margin: 0 auto;
+     /*border: 1px solid black;*/
+}
+
+header {
+     width: 900px;
+     display: inline-block;
+     border: 2px solid black;
+}
+
+          header > h1 {
+               display: inline-block;
+               margin-left: 10px;
+          }
+
+          header > p {
+               display: inline-block;
+               margin: 0px 0px 0px 370px;
+          }
+
+          header > a {
+               margin: 0px 0px 0px 30px;
+               text-decoration: underline;
+          }
+
+article {
+     width: 800px;
+     margin: 0 auto;
+
+}
+
+          article > h2 {
+               padding: 10px 0px 0px 0px;
+               margin: 40px 0px 5px 0px;
+          }
+
+aside {
+     width: 782px;
+     margin: 0px 0px 46px 51px;
+}
+
+          aside > p {
+               margin-left: 20px;
+          }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="stylesheet" href="{{ url_for('static', filename='wall.css') }}">
+     <title>Document</title>
+</head>
+<body>
+     <div class="wrapper">
+
+          <main>
+
+               <header>
+                    <h1>CodingDojo - The Wall</h1>
+
+                         {% for i in session['current_user']: %}
+                              <p>Welcome {{ i['first_name'] }}</p>
+                         {% endfor %}
+
+                    <a href="/logout"><button type="button" name="button">Logout</button></a>
+
+               </header>
+
+               <article class="content">
+
+                    {% for i in session['current_user']: %}
+
+                    <h2>Post a message</h2>
+                    <form class="message" action="/store/{{ i['id'] }}/message" method="post">
+                         <textarea name="message" rows="8" cols="125"></textarea>
+                         <input type="submit" name="submit" value="Post a message">
+                    </form>
+
+                    {% endfor %}
+
+               </article>
+
+
+               {% for i in session['messages']: %}
+               <aside>
+
+                    <h4>{{ i['first_name']}} {{ i['last_name'] }} {{ i['created_at']}}</h4>
+                    <p>{{ i['message'] }}</p>
+
+                    <!-- {% for i in session['current_user']: %}
+                    <form class="message" action="/store/{{ i['id'] }}/comment" method="post">
+                         <textarea name="message" rows="8" cols="125"></textarea>
+                         <input type="submit" name="submit" value="Post a comment">
+                    </form>
+                    {% endfor %} -->
+
+               </aside>
+               {% endfor %}
+
+          </main>
+
+     </div>
+
+</body>
+</html>

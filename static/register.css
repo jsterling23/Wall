@@ -1,0 +1,74 @@
+.wrapper {
+     width: 500px;
+     height: 700px;
+     margin: auto;
+     /*text-align: center;*/
+}
+
+body {
+     background: linear-gradient(#000000, #3a3a3a 100%);
+}
+
+header {
+     /*margin:120px 0px 25px 106px;*/
+     text-align: center;
+     /*font-size: 2.5em;*/
+}
+
+header > h1 {
+     color: #00adef;
+     /*text-align: center;*/
+     text-decoration: underline;
+}
+
+main {
+     /*text-align: center;*/
+     text-decoration: underline;
+}
+
+h3 {
+     color: #00adef;
+}
+
+label, p, ul > li {
+     font-size: .80em;
+     color: #00adef;
+}
+
+form {
+     text-decoration: none;
+     display: inline-block;
+     margin:30px 0px 0px 151px;
+}
+
+     form > input {
+          margin:0px 0px 20px 0px;
+          width: 200px;
+     }
+
+     form > label {
+          display: block;
+          font-size: 1.0em;
+     }
+
+#submit, button {
+     background: linear-gradient(#0086f3, #075b8b 100%);
+     color: white;
+     border: .5px solid white;
+     height: 30px;
+     width: 75px;
+     margin-left: 16.5px;
+}
+
+.messages {
+     margin:0px 0px 0px 0px;
+     text-align: center;
+}
+
+     .messages > ul {
+          color: red;
+     }
+
+hr {
+     border: 2px solid #00adef;
+}
